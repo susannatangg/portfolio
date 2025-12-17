@@ -2,6 +2,20 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 
 const Home = () => {
+
+  const tileStyle = (imageUrl, position = 'center') => ({
+    backgroundImage: `url(${imageUrl})`,
+    backgroundSize: 'cover',
+    backgroundPosition: position,
+    backgroundRepeat: 'no-repeat',
+    backgroundColor: 'lightgray' // Fallback color while image loads
+  });
+
+  const titleStyle = {
+    // color: 'white',
+    // fontWeight: 'bold'
+  };
+
   return (
     <>
       <Hero />
@@ -12,8 +26,12 @@ const Home = () => {
           {/* Projects Tile */}
           <div className="home-item">
             <Link to="/projects">
-              <div className="home-item-inner" id="projects" style={{ background: 'lightgray' }}>
-                <h4 className="home-item-title">Projects</h4>
+              <div 
+                className="home-item-inner" 
+                id="projects" 
+                style={tileStyle('/assets/photography.jpg', '85% center')}
+              >
+                <h4 className="home-item-title" style={titleStyle}>Projects</h4>
               </div>
             </Link>
           </div>
@@ -21,8 +39,12 @@ const Home = () => {
           {/* Creative Tile */}
           <div className="home-item">
             <Link to="/creative">
-              <div className="home-item-inner" id="creative" style={{ background: 'lightgray' }}>
-                <h4 className="home-item-title">Creative</h4>
+              <div 
+                className="home-item-inner" 
+                id="projects" 
+                style={tileStyle('/assets/photography.jpg')}
+              >
+                <h4 className="home-item-title" style={titleStyle}>Creative</h4>
               </div>
             </Link>
           </div>
@@ -30,8 +52,12 @@ const Home = () => {
           {/* About Tile */}
           <div className="home-item">
             <Link to="/about">
-              <div className="home-item-inner" id="about-tile" style={{ background: 'lightgray' }}>
-                <h4 className="home-item-title">About</h4>
+              <div 
+                className="home-item-inner" 
+                id="projects" 
+                style={tileStyle('/assets/about.jpg')}
+              >
+                <h4 className="home-item-title" style={titleStyle}>About</h4>
               </div>
             </Link>
           </div>
