@@ -1,0 +1,60 @@
+import { Link } from 'react-router-dom';
+
+const Drawing = () => {
+  // Placeholder data - replace 'text' with your real descriptions later
+  const drawings = [
+    { id: 1, text: "Wuzhen, China.", src: "/img/drawing/wuzhen.jpg"},
+    { id: 2, text: "Salmon on a stick :O", src: "/img/drawing/salmon.jpg"},
+    { id: 3, text: "My first omakase!", src: "/img/drawing/omakase.jpg"},
+    { id: 4, text: "Jiufen, Taiwan.", src: "/img/drawing/jiufen.jpg"},
+    { id: 5, text: "Another beautiful day to work a 9-5 in Seattle!", src: "/img/drawing/seattle.jpg"},
+  ];
+
+  return (
+    <main id="main">
+      <div style={{ height: '225px' }}></div>
+
+      <section id="photography" style={{ width: '100%', maxWidth: '800px', margin: 'auto' }}>
+        
+        <h2 style={{ textAlign: 'center', marginBottom: '50px' }}>my sketchbook!</h2>
+        
+        {/* The Centered Column */}
+        <div style={{ 
+          display: 'flex', 
+          flexDirection: 'column', 
+          alignItems: 'center', 
+          gap: '60px' // Space between each drawing block
+        }}>
+          
+          {drawings.map((item) => (
+            <div key={item.id} style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              
+              {/* Gray Image Block */}
+              <div className="drawing-image-box">
+                 {item.src && <img src={item.src} alt={item.text} className="drawing-img" />}
+              </div>
+
+              {/* Text Box */}
+              <div style={{ 
+                maxWidth: '500px', 
+                width: '100%', 
+                textAlign: 'left' // Or 'center' if you prefer
+              }}>
+                <p style={{ margin: 0, fontSize: '14px', color: '#555' }}>
+                  {item.text}
+                </p>
+              </div>
+
+            </div>
+          ))}
+
+        </div>
+
+      </section>
+
+      <div style={{ height: '80px' }}></div>
+    </main>
+  );
+};
+
+export default Drawing;
