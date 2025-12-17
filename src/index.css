@@ -2303,7 +2303,7 @@ logo: helvetica bold
   border: 40px solid black; /* Creates the specific 20px border */
   box-sizing: border-box; /* Ensures the border is included in the 400px width */
   margin-bottom: 15px;
-  line-height: 0;         /* Removes accidental white space below the image */
+  line-height: 0;
 }
 
 /* The Image Inside */
