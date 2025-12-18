@@ -3,30 +3,30 @@ import { Link } from 'react-router-dom';
 const Sports = () => {
   // Column 1 Images
   const col1 = [
-    "/img/photos/sports/7.jpg",
-    "/img/photos/sports/28.jpg",
-    "/img/photos/sports/29.jpg",
-    "/img/photos/sports/10.jpg",
-    "/img/photos/sports/19.jpg"
+    "/assets/img/photos/sports/7.jpg",
+    "/assets/img/photos/sports/28.jpg",
+    "/assets/img/photos/sports/29.jpg",
+    "/assets/img/photos/sports/10.jpg",
+    "/assets/img/photos/sports/19.jpg"
   ];
 
   // Column 2
   const col2 = [
-    "/img/photos/sports/22.jpg",
-    "/img/photos/sports/24.jpg",
-    "/img/photos/sports/12.jpg",
-    "/img/photos/sports/17.jpg",
-    "/img/photos/sports/30.jpg"
+    "/assets/img/photos/sports/22.jpg",
+    "/assets/img/photos/sports/24.jpg",
+    "/assets/img/photos/sports/12.jpg",
+    "/assets/img/photos/sports/17.jpg",
+    "/assets/img/photos/sports/30.jpg"
   ];
 
   // Column 3
   const col3 = [
-    "/img/photos/sports/11.jpg",
-    "/img/photos/sports/16.jpg",
-    "/img/photos/sports/9.jpg",
-    "/img/photos/sports/14.jpg",
-    "/img/photos/sports/15.jpg",
-    "/img/photos/sports/18.jpg"
+    "/assets/img/photos/sports/11.jpg",
+    "/assets/img/photos/sports/16.jpg",
+    "/assets/img/photos/sports/9.jpg",
+    "/assets/img/photos/sports/14.jpg",
+    "/assets/img/photos/sports/15.jpg",
+    "/assets/img/photos/sports/18.jpg"
   ];
 
   return (

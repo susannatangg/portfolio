@@ -8,7 +8,7 @@ const About = () => {
         <div className="about-container">
           <div className="about-item" id="about-img">
             {/* React serves files from 'public' at the root path, so 'assets/...' works */}
-            <img src="assets/about2.jpg" alt="Susanna Tang" />
+            <img src="/assets/img/about/about2.jpg" alt="Susanna Tang" />
           </div>
           <div className="about-item" id="about-text">
             <p>

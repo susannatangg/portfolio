@@ -3,23 +3,24 @@ import { Link } from 'react-router-dom';
 const Misc = () => {
   // Column 1 Images
   const col1 = [
-    "/img/photos/landscape/1.jpg",
-    "/img/photos/landscape/7.jpg"
-    // "/img/photos/landscape/8.png"
+    "/assets/img/photos/other/8.jpg",
+    "/assets/img/photos/other/7.jpg",
+    "/assets/img/photos/other/6.jpg"
+    // "/assets/img/photos/landscape/8.png"
   ];
 
   // Column 2
   const col2 = [
-    "/img/photos/other/1.jpg",
-    // "/img/photos/landscape/5.jpg",
+    "/assets/img/photos/other/1.jpg",
+    "/assets/img/photos/other/9.jpg",
   ];
 
   // Column 3
   const col3 = [
-    // "/img/photos/other/2.jpg",
-    // "/img/photos/other/5.jpg",
-    // "/img/photos/landscape/2.jpg",
-    "/img/photos/other/4.jpg",
+    // "/assets/img/photos/other/2.jpg",
+    // "/assets/img/photos/other/5.jpg",
+    // "/assets/img/photos/landscape/2.jpg",
+    "/assets/img/photos/other/4.jpg",
   ];
 
   return (

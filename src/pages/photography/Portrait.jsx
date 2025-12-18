@@ -3,26 +3,27 @@ import { Link } from 'react-router-dom';
 const Portrait = () => {
   // Column 1 Images
   const col1 = [
-    "/img/photos/portraits/26.jpg",
-    "/img/photos/portraits/37.jpg",
-    "/img/photos/portraits/13.jpg",
-    "/img/photos/portraits/32.jpg"
+    "/assets/img/photos/portraits/26.jpg",
+    "/assets/img/photos/portraits/37.jpg",
+    "/assets/img/photos/portraits/13.jpg",
+    "/assets/img/photos/portraits/32.jpg"
   ];
 
   // Column 2
   const col2 = [
-    "/img/photos/portraits/36.jpg",
-    "/img/photos/portraits/21.jpg",
-    "/img/photos/portraits/23.jpg",
-    "/img/photos/portraits/35.jpg"
+    "/assets/img/photos/portraits/36.jpg",
+    "/assets/img/photos/portraits/21.jpg",
+    "/assets/img/photos/portraits/23.jpg",
+    "/assets/img/photos/portraits/35.jpg",
+    "/assets/img/photos/portraits/34.jpg"
   ];
 
   // Column 3
   const col3 = [
-    "/img/photos/portraits/30.jpg",
-    "/img/photos/portraits/38.jpg",
-    "/img/photos/portraits/31.jpg",
-    "/img/photos/portraits/33.jpg"
+    "/assets/img/photos/portraits/30.jpg",
+    "/assets/img/photos/portraits/38.jpg",
+    "/assets/img/photos/portraits/31.jpg",
+    "/assets/img/photos/portraits/33.jpg"
   ];
 
   return (

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 const Drawing = () => {
   // Placeholder data - replace 'text' with your real descriptions later
   const drawings = [
-    { id: 1, text: "Wuzhen, China.", src: "/img/drawing/wuzhen.jpg"},
-    { id: 2, text: "Salmon on a stick :O", src: "/img/drawing/salmon.jpg"},
-    { id: 3, text: "My first omakase!", src: "/img/drawing/omakase.jpg"},
-    { id: 4, text: "Jiufen, Taiwan.", src: "/img/drawing/jiufen.jpg"},
-    { id: 5, text: "Another beautiful day to work a 9-5 in Seattle!", src: "/img/drawing/seattle.jpg"},
+    { id: 1, text: "Wuzhen, China.", src: "/assets/img/drawing/wuzhen.jpg"},
+    { id: 2, text: "Salmon on a stick :O", src: "/assets/img/drawing/salmon.jpg"},
+    { id: 3, text: "My first omakase!", src: "/assets/img/drawing/omakase.jpg"},
+    { id: 4, text: "Jiufen, Taiwan.", src: "/assets/img/drawing/jiufen.jpg"},
+    { id: 5, text: "Another beautiful day to work a 9-5 in Seattle!", src: "/assets/img/drawing/seattle.jpg"},
   ];
 
   return (

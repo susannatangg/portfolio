@@ -5,19 +5,19 @@ const Projects = () => {
     {
       id: 'doodle-captioning',
       title: "Doodle Captioning",
-      image: "/img/projects/doodle.jpg",
+      image: "/assets/img/projects/doodle.jpg",
       year: "2025"
     },
     {
       id: 'bug-enrichment',
       title: "Bug Enricher",
-      image: "/img/projects/gcp.jpg", 
+      image: "/assets/img/projects/gcp.jpg", 
       year: "2025"
     },
     {
       id: 'linktune',
       title: "LinkTune",
-      image: "/img/projects/linktune.jpg",
+      image: "/assets/img/projects/linktune.jpg",
       year: "2024"
     }
   ];

@@ -64,11 +64,11 @@ const Navbar = () => {
             <li><Link to="/projects" onClick={toggleMobileNav}>Projects</Link></li>
             <li><Link to="/creative" onClick={toggleMobileNav}>Creative</Link></li>
             <li><Link to="/about" onClick={toggleMobileNav}>About</Link></li>
-            <li className="ig">
+            {/* <li className="ig">
                 <a href="https://www.instagram.com/susannatphotos/" target="_blank" rel="noopener noreferrer">
                     <FaInstagram />
                 </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       )}

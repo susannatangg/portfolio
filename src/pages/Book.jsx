@@ -39,80 +39,46 @@ const DesignItem = () => {
             <div className="item flex-fill">
               <h3>our story</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper dignissim cras tincidunt lobortis. Quis eleifend quam adipiscing vitae proin sagittis nisl. Pretium lectus quam id leo in. Faucibus turpis in eu mi bibendum neque egestas congue. Est pellentesque elit ullamcorper dignissim cras tincidunt. Commodo odio aenean sed adipiscing diam donec. Facilisis gravida neque convallis a cras semper auctor neque vitae.
-              </p>
+                Michelle, Lalia, and I met at a biotechnology summer program in 2022. There, we spent our latest nights at the lab together, falling asleep in lectures together, chugging caffeine together, and miraculously still falling in love with biology together!
+                When the program ended, we stayed in touch through our common love for biology and care for children.
+                <br/>
+                <br/>
+                After many many Zoom meetings turned yaps, we drafted a book, published our book, hosted read-alouds in elementary schools, and found a new joy in sharing the project that bonded our friendship!
+                We hope that our book can provide a memorable and simple scientific answer to the question: What makes you, you? 
+             </p>
             </div>
             <div className="item flex-fill">
-              <h3>process</h3>
-              <h5>1. SKETCHING</h5>
+              <h3>tech stack</h3>
+              <h5>1. ADOBE INDESIGN</h5>
               <p style={{ marginBottom: '18px' }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                Used to create pages and compile illustration components and typography with consistent style and spacing. 
               </p>
-              <h5>2. DESIGN</h5>
+              <h5>2. ADOBE ILLUSTRATOR</h5>
               <p style={{ marginBottom: '18px' }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                Most illustrations were created or cleaned and post-processed in Adobe Illustrator for scalable vectorized images. 
               </p>
-              <h5>3. FINAL</h5>
+              <h5>3. PROCREATE</h5>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                Some complex illustrations were drawn by hand on Procreate and then post-processed and vectorized in Adobe Illustrator.
               </p>
             </div>
-            <div className="item flex-fill">
+            {/* <div className="item flex-fill">
               <h3>mission</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper dignissim cras tincidunt lobortis. Quis eleifend quam adipiscing vitae proin sagittis nisl. Pretium lectus quam id leo in.
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper dignissim cras tincidunt lobortis. Quis eleifend quam adipiscing vitae proin sagittis nisl. Pretium lectus quam id leo in.
+                Michelle, Lalia, and I hope that our book can provide a memorable and simple scientific answer to the question: What makes you, you? 
               </p>
-            </div>
+            </div> */}
           </div>
 
           <div style={{ height: '80px' }}></div>
 
           {/* Three Horizontal Images */}
+          <h3>ILLUSTRATION SAMPLES</h3>
           <div className="p1-imgs">
-            <img src="/img/design/horizontal.jpg" className="p1-img" alt="Process 1" />
-            <img src="/img/design/horizontal.jpg" className="p1-img" alt="Process 2" />
-            <img src="/img/design/horizontal.jpg" className="p1-img" alt="Process 3" />
+            <img src="/assets/bb/illustration1.png" className="p1-img" alt="Process 1" />
+            <img src="/assets/bb/illustration2.png" className="p1-img" alt="Process 2" />
+            <img src="/assets/bb/illustration3.png" className="p1-img" alt="Process 3" />
           </div>
-
-          <div style={{ height: '80px' }}></div>
-
-          {/* Process Grid */}
-          <section id="process">
-            <h3>DESIGN PROCESS</h3>
-            <div className="container">
-              <div className="item div1" style={{ aspectRatio: '1' }}>
-                <img src="/img/photography/square.jpg" alt="Process Step 1" />
-                <p>Lit velenima que odit ad maio totatii.</p>
-              </div>
-              <div className="item div2" style={{ aspectRatio: '1' }}>
-                <img src="/img/photography/square.jpg" alt="Process Step 2" />
-                <p>Lit velenima que odit ad maio totatii.</p>
-              </div>
-              <div className="item div3" style={{ aspectRatio: '1' }}>
-                <img src="/img/photography/square.jpg" alt="Process Step 3" />
-                <p>Lit velenima que odit ad maio totatii.</p>
-              </div>
-              <div className="item div4">
-                 {/* <img src="/img/design/horizontal.jpg" alt="Process Step 4" /> */}
-              </div>
-            </div>
-          </section>
-
-          {/* <div style={{ height: '80px' }}></div> */}
-
-          {/* Final Illustration Grid */}
-          {/* <section id="final">
-            <h3>ILLUSTRATION SAMPLES</h3>
-            <div className="container">
-              <div className="item div1"></div>
-              <div className="item div2" style={{ aspectRatio: '1 / 1' }}></div>
-              <div className="item div3" style={{ aspectRatio: '1 / 1' }}></div>
-              <div className="item div4"></div>
-            </div>
-          </section> */}
 
           <div style={{ height: '80px' }}></div>
 
