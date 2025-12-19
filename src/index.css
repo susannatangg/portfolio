@@ -15,10 +15,6 @@ logo: helvetica bold
     --linkHoverColor:rgb(186, 186, 186);
   }
   
-  .grayBgColor{
-    background:var(--bgColor);
-  }
-  
   body {
     background: #fff;
     color: #666666;
@@ -160,127 +156,6 @@ logo: helvetica bold
     #header .logo img {
       max-height: 40px;
     }
-  }
-/*   
-  #header.header-fixed {
-    background: #fff;
-    padding: 20px 0;
-    height: 72px;
-    transition: all 0.5s;
-    box-shadow:0 -32px 20px 20px rgb(0, 0, 0);
-  } */
-  
-  /*--------------------------------------------------------------
-  # Hero Section
-  --------------------------------------------------------------*/
-  #hero {
-    width: 100%;
-    height: 50vh;
-    background: url(img/hero.jpg) top center;
-    background-size: cover;
-    position: relative;
-  }
-  
-  #heroSub{
-    width: 100%;
-    height: 50vh;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .departmentsHeroSub{
-    background: url(img/homePage/4.webp) top center;
-  }
-  
-  .subPage{
-    height:50vh;
-  }
-  
-  @media (min-width: 1024px) {
-    #hero {
-      background-attachment: fixed;
-    }
-  }
-  
-  #hero:before, #heroSub:before{
-    content: "";
-    /* background: rgba(154, 193, 134, 0.5); */
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  #hero .hero-container, #heroSub .hero-container {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  #hero h1, #heroSub h1 {
-    margin: 30px 0 10px 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    text-transform: uppercase;
-    color: #fff;
-  }
-  
-  @media (max-width: 768px) {
-    #hero h1, #heroSub h1 {
-      font-size: 28px;
-      line-height: 36px;
-    }
-  }
-  
-  #hero h2, #heroSub h2 {
-    color: #eee;
-    margin-bottom: 50px;
-    font-size: 24px;
-  }
-  
-  #heroSub p {
-    color: #eee;
-    margin-bottom: 50px;
-    font-size: 15px;
-    width:85%;
-    max-width:650px;
-  }
-  
-  @media (max-width: 768px) {
-    #hero h2, #heroSub h2 {
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 30px;
-    }
-  }
-  
-  #hero .btn-get-started, #heroSub .btn-get-started{
-    /* font-family: serif; */
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 28px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 10px;
-    border: 2px solid #fff;
-    color: #fff;
-  }
-  
-  #hero .btn-get-started:hover, #heroSub .btn-get-started:hover{
-    background: var(--mainColor);
-    border: 2px solid var(--mainColor);
   }
   
   /*--------------------------------------------------------------
@@ -563,25 +438,6 @@ logo: helvetica bold
     color: #fff;
   }
   
-  /*--------------------------------------------------------------
-  # Sections
-  --------------------------------------------------------------*/
-  /* Sections Header
-  --------------------------------*/
-  .section-header .section-title {
-    font-size: 32px;
-    color: #333;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-    margin-bottom: 5px;
-  }
-  
-  .section-header .section-description {
-    text-align: center;
-    padding-bottom: 20px;
-    color: #999;
-  }
   
   /* About Us Section
   --------------------------------*/

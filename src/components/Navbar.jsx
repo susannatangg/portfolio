@@ -42,7 +42,7 @@ const Navbar = () => {
               <li className={isActive('/')}><Link to="/">Home</Link></li>
               <li className={isActive('/projects')}><Link to="/projects">Projects</Link></li>
               <li className={isActive('/creative')}><Link to="/creative">Creative</Link></li>
-              {/* <li className={isActive('/about')}><Link to="/about">About</Link></li> */}
+              <li className={isActive('/about')}><Link to="/about">About</Link></li>
               {/* <li className="ig">
                 <a target="_blank" rel="noopener noreferrer" style={{fontSize:'25px', marginTop:'-8px'}} href="https://www.instagram.com/susannatphotos/" className="instagram">
                   <FaInstagram />
