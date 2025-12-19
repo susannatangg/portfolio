@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 
 const Drawing = () => {
-  // Placeholder data - replace 'text' with your real descriptions later
+  // Updated the 'src' paths within the array to include the dynamic base URL
   const drawings = [
-    { id: 1, text: "Wuzhen, China.", src: "/assets/img/drawing/wuzhen.jpg"},
-    { id: 2, text: "Salmon on a stick :O", src: "/assets/img/drawing/salmon.jpg"},
-    { id: 3, text: "My first omakase!", src: "/assets/img/drawing/omakase.jpg"},
-    { id: 4, text: "Jiufen, Taiwan.", src: "/assets/img/drawing/jiufen.jpg"},
-    { id: 5, text: "Another beautiful day to work a 9-5 in Seattle!", src: "/assets/img/drawing/seattle.jpg"},
+    { id: 1, text: "Wuzhen, China.", src: `${import.meta.env.BASE_URL}assets/img/drawing/wuzhen.jpg`},
+    { id: 2, text: "Salmon on a stick :O", src: `${import.meta.env.BASE_URL}assets/img/drawing/salmon.jpg`},
+    { id: 3, text: "My first omakase!", src: `${import.meta.env.BASE_URL}assets/img/drawing/omakase.jpg`},
+    { id: 4, text: "Jiufen, Taiwan.", src: `${import.meta.env.BASE_URL}assets/img/drawing/jiufen.jpg`},
+    { id: 5, text: "Another beautiful day to work a 9-5 in Seattle!", src: `${import.meta.env.BASE_URL}assets/img/drawing/seattle.jpg`},
   ];
 
   return (
@@ -31,6 +31,7 @@ const Drawing = () => {
               
               {/* Gray Image Block */}
               <div className="drawing-image-box">
+                 {/* No changes needed here, since the src is already fixed in the array above */}
                  {item.src && <img src={item.src} alt={item.text} className="drawing-img" />}
               </div>
 
@@ -38,7 +39,7 @@ const Drawing = () => {
               <div style={{ 
                 maxWidth: '500px', 
                 width: '100%', 
-                textAlign: 'left' // Or 'center' if you prefer
+                textAlign: 'left'
               }}>
                 <p style={{ margin: 0, fontSize: '14px', color: '#555' }}>
                   {item.text}

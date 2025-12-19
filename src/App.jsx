@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -14,28 +14,39 @@ import Misc from './pages/photography/Misc';
 import Book from './pages/Book';
 import Drawing from './pages/Drawing';
 
+function AppContent() {
+  const location = useLocation();
+
+  const hideFooterPaths = ['/', '/creative'];
+
+  return (
+    <div className="App">
+      <Navbar />
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/creative" element={<Creative />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+
+        {/* Sub-pages */}
+        <Route path="/creative/book" element={<Book />} />
+        <Route path="/creative/drawing" element={<Drawing />} />
+        <Route path="/creative/photography" element={<Photography />} />
+        <Route path="/photography/portrait" element={<Portrait />} />
+        <Route path="/photography/sports" element={<Sports />} />
+        <Route path="/photography/misc" element={<Misc />} />
+      </Routes>
+
+      {!hideFooterPaths.includes(location.pathname) && <Footer />}
+    </div>
+  );
+}
+
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          {/* Main Pages */}
-          <Route path="/" element={<Home />} />
-          <Route path="/creative" element={<Creative />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-
-          {/* Sub-pages */}
-          <Route path="/creative/book" element={<Book />} />
-          <Route path="/creative/drawing" element={<Drawing />} />
-          <Route path="/creative/photography" element={<Photography />} />
-          <Route path="/photography/portrait" element={<Portrait />} />
-          <Route path="/photography/sports" element={<Sports />} />
-          <Route path="/photography/misc" element={<Misc />} />
-        </Routes>
-        <Footer />
-      </div>
+    <Router basename="/portfolio"> 
+      <AppContent />
     </Router>
   );
 }

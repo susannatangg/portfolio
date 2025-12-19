@@ -6,7 +6,6 @@ const Misc = () => {
     "/assets/img/photos/other/8.jpg",
     "/assets/img/photos/other/7.jpg",
     "/assets/img/photos/other/6.jpg"
-    // "/assets/img/photos/landscape/8.png"
   ];
 
   // Column 2
@@ -17,9 +16,6 @@ const Misc = () => {
 
   // Column 3
   const col3 = [
-    // "/assets/img/photos/other/2.jpg",
-    // "/assets/img/photos/other/5.jpg",
-    // "/assets/img/photos/landscape/2.jpg",
     "/assets/img/photos/other/4.jpg",
   ];
 
@@ -28,7 +24,7 @@ const Misc = () => {
       <div style={{ height: '175px' }}></div>
 
       <h4 className="breadcrumb">
-        <Link to="/creative/photography" style={{ color: '#000' }}>Photography</Link> &gt; Landscape
+        <Link to="/creative/photography" style={{ color: '#000' }}>Photography</Link> &gt; Misc
       </h4>
 
       <div style={{ height: '50px' }}></div>
@@ -46,10 +42,10 @@ const Misc = () => {
               {col1.map((src, index) => (
                 <img 
                   key={index} 
-                  src={src} 
+                  src={`${import.meta.env.BASE_URL}${src.substring(1)}`} 
                   className="grid-item" 
                   loading="lazy" 
-                  alt={`Landscape ${index}`} 
+                  alt={`Misc ${index}`} 
                 />
               ))}
             </div>
@@ -59,10 +55,10 @@ const Misc = () => {
               {col2.map((src, index) => (
                 <img 
                   key={index} 
-                  src={src} 
+                  src={`${import.meta.env.BASE_URL}${src.substring(1)}`} 
                   className="grid-item" 
                   loading="lazy" 
-                  alt={`Landscape ${index}`} 
+                  alt={`Misc ${index}`} 
                 />
               ))}
             </div>
@@ -72,10 +68,10 @@ const Misc = () => {
               {col3.map((src, index) => (
                 <img 
                   key={index} 
-                  src={src} 
+                  src={`${import.meta.env.BASE_URL}${src.substring(1)}`} 
                   className="grid-item" 
                   loading="lazy" 
-                  alt={`Landscape ${index}`} 
+                  alt={`Misc ${index}`} 
                 />
               ))}
             </div>

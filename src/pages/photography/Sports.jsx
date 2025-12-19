@@ -34,7 +34,7 @@ const Sports = () => {
       <div style={{ height: '175px' }}></div>
 
       <h4 className="breadcrumb">
-        <Link to="/creative/photography" style={{ color: '#000' }}>Photography</Link> &gt; Portraits
+        <Link to="/creative/photography" style={{ color: '#000' }}>Photography</Link> &gt; Sports
       </h4>
 
       <div style={{ height: '50px' }}></div>
@@ -52,7 +52,7 @@ const Sports = () => {
               {col1.map((src, index) => (
                 <img 
                   key={index} 
-                  src={src} 
+                  src={`${import.meta.env.BASE_URL}${src.substring(1)}`} 
                   className="grid-item" 
                   loading="lazy" 
                   alt={`Sports ${index}`} 
@@ -65,7 +65,7 @@ const Sports = () => {
               {col2.map((src, index) => (
                 <img 
                   key={index} 
-                  src={src} 
+                  src={`${import.meta.env.BASE_URL}${src.substring(1)}`} 
                   className="grid-item" 
                   loading="lazy" 
                   alt={`Sports ${index}`} 
@@ -78,7 +78,7 @@ const Sports = () => {
               {col3.map((src, index) => (
                 <img 
                   key={index} 
-                  src={src} 
+                  src={`${import.meta.env.BASE_URL}${src.substring(1)}`} 
                   className="grid-item" 
                   loading="lazy" 
                   alt={`Sports ${index}`} 

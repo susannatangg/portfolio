@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const Portrait = () => {
-  // Column 1 Images
+  // These stay clean - no need to change every single line here!
   const col1 = [
     "/assets/img/photos/portraits/26.jpg",
     "/assets/img/photos/portraits/37.jpg",
@@ -9,7 +9,6 @@ const Portrait = () => {
     "/assets/img/photos/portraits/32.jpg"
   ];
 
-  // Column 2
   const col2 = [
     "/assets/img/photos/portraits/36.jpg",
     "/assets/img/photos/portraits/21.jpg",
@@ -18,7 +17,6 @@ const Portrait = () => {
     "/assets/img/photos/portraits/34.jpg"
   ];
 
-  // Column 3
   const col3 = [
     "/assets/img/photos/portraits/30.jpg",
     "/assets/img/photos/portraits/38.jpg",
@@ -44,12 +42,12 @@ const Portrait = () => {
         <div className="photography-grid">
           <div className="three-columns">
             
-            {/* Column 1 */}
+            {/* Column 1 - Prefix added in the map */}
             <div className="gallery-column">
               {col1.map((src, index) => (
                 <img 
                   key={index} 
-                  src={src} 
+                  src={`${import.meta.env.BASE_URL}${src.substring(1)}`} 
                   className="grid-item" 
                   loading="lazy" 
                   alt={`Portrait ${index}`} 
@@ -57,12 +55,12 @@ const Portrait = () => {
               ))}
             </div>
 
-            {/* Column 2 */}
+            {/* Column 2 - Prefix added in the map */}
             <div className="gallery-column">
               {col2.map((src, index) => (
                 <img 
                   key={index} 
-                  src={src} 
+                  src={`${import.meta.env.BASE_URL}${src.substring(1)}`} 
                   className="grid-item" 
                   loading="lazy" 
                   alt={`Portrait ${index}`} 
@@ -70,12 +68,12 @@ const Portrait = () => {
               ))}
             </div>
 
-            {/* Column 3 */}
+            {/* Column 3 - Prefix added in the map */}
             <div className="gallery-column">
               {col3.map((src, index) => (
                 <img 
                   key={index} 
-                  src={src} 
+                  src={`${import.meta.env.BASE_URL}${src.substring(1)}`} 
                   className="grid-item" 
                   loading="lazy" 
                   alt={`Portrait ${index}`} 

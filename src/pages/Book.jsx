@@ -26,7 +26,12 @@ const DesignItem = () => {
           </h4> */}
           <h2>I AM ME & YOU ARE YOU</h2>
           <h3>All About Our DNA</h3>
-          <img src="/assets/bb/mockup.jpg" className="mockup" alt="Book Mockup" />
+          {/* Fixed Mockup Image */}
+          <img 
+            src={`${import.meta.env.BASE_URL}assets/bb/mockup.jpg`} 
+            className="mockup" 
+            alt="Book Mockup" 
+          />
         </div>
       </div>
 
@@ -62,22 +67,16 @@ const DesignItem = () => {
                 Some complex illustrations were drawn by hand on Procreate and then post-processed and vectorized in Adobe Illustrator.
               </p>
             </div>
-            {/* <div className="item flex-fill">
-              <h3>mission</h3>
-              <p>
-                Michelle, Lalia, and I hope that our book can provide a memorable and simple scientific answer to the question: What makes you, you? 
-              </p>
-            </div> */}
           </div>
 
           <div style={{ height: '80px' }}></div>
 
-          {/* Three Horizontal Images */}
+          {/* Three Horizontal Images - Fixed Paths */}
           <h3>ILLUSTRATION SAMPLES</h3>
           <div className="p1-imgs">
-            <img src="/assets/bb/illustration1.png" className="p1-img" alt="Process 1" />
-            <img src="/assets/bb/illustration2.png" className="p1-img" alt="Process 2" />
-            <img src="/assets/bb/illustration3.png" className="p1-img" alt="Process 3" />
+            <img src={`${import.meta.env.BASE_URL}assets/bb/illustration1.png`} className="p1-img" alt="Process 1" />
+            <img src={`${import.meta.env.BASE_URL}assets/bb/illustration2.png`} className="p1-img" alt="Process 2" />
+            <img src={`${import.meta.env.BASE_URL}assets/bb/illustration3.png`} className="p1-img" alt="Process 3" />
           </div>
 
           <div style={{ height: '80px' }}></div>
@@ -122,10 +121,10 @@ const DesignItem = () => {
 
         <div style={{ height: '80px' }}></div>
 
-        {/* Authors Section */}
+        {/* Authors Section - Fixed Path */}
         <section id="sketch" style={{ position: 'relative' }}>
           <div className="item authors_illus">
-            <img src="/assets/bb/authors_illus.png" alt="Authors Illustration" />
+            <img src={`${import.meta.env.BASE_URL}assets/bb/authors_illus.png`} alt="Authors Illustration" />
           </div>
         </section>
 

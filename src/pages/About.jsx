@@ -1,14 +1,17 @@
 const About = () => {
   return (
-    <main id="main" class="about">
+    <main id="main" className="about">
       <div style={{ height: '200px' }}></div>
 
       <h3>ABOUT</h3>
       <div className="about-outer-container" style={{ display: 'flex', flexDirection: 'column' }}>
         <div className="about-container">
           <div className="about-item" id="about-img">
-            {/* React serves files from 'public' at the root path, so 'assets/...' works */}
-            <img src="/assets/img/about/about2.jpg" alt="Susanna Tang" />
+            {/* The path now dynamically includes the /portfolio/ base */}
+            <img 
+              src={`${import.meta.env.BASE_URL}assets/img/about/about2.jpg`} 
+              alt="Susanna Tang" 
+            />
           </div>
           <div className="about-item" id="about-text">
             <p>

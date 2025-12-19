@@ -24,7 +24,7 @@ const Home = () => {
 
         <div className="home-items-container">
           {/* Projects Tile */}
-          <div className="home-item">
+          {/* <div className="home-item">
             <Link to="/projects">
               <div 
                 className="home-item-inner" 
@@ -34,10 +34,10 @@ const Home = () => {
                 <h4 className="home-item-title" style={titleStyle}>Projects</h4>
               </div>
             </Link>
-          </div>
+          </div> */}
 
           {/* Creative Tile */}
-          <div className="home-item">
+          {/* <div className="home-item">
             <Link to="/creative">
               <div 
                 className="home-item-inner" 
@@ -47,10 +47,10 @@ const Home = () => {
                 <h4 className="home-item-title" style={titleStyle}>Creative</h4>
               </div>
             </Link>
-          </div>
+          </div> */}
 
           {/* About Tile */}
-          <div className="home-item">
+          {/* <div className="home-item">
             <Link to="/about">
               <div 
                 className="home-item-inner" 
@@ -60,7 +60,8 @@ const Home = () => {
                 <h4 className="home-item-title" style={titleStyle}>About</h4>
               </div>
             </Link>
-          </div>
+          </div> */}
+
         </div>
 
         <div style={{ height: '100px' }}></div>
