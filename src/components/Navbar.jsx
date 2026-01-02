@@ -40,9 +40,9 @@ const Navbar = () => {
           <nav id="nav-menu-container">
             <ul className="nav-menu">
               <li className={isActive('/')}><Link to="/">Home</Link></li>
-              <li className={isActive('/projects')}><Link to="/projects">Projects</Link></li>
+              <li className={isActive('/projects')}><Link to="/projects">Work</Link></li>
               <li className={isActive('/creative')}><Link to="/creative">Creative</Link></li>
-              <li className={isActive('/about')}><Link to="/about">About</Link></li>
+              {/* <li className={isActive('/about')}><Link to="/about">About</Link></li> */}
               {/* <li className="ig">
                 <a target="_blank" rel="noopener noreferrer" style={{fontSize:'25px', marginTop:'-8px'}} href="https://www.instagram.com/susannatphotos/" className="instagram">
                   <FaInstagram />
@@ -61,7 +61,7 @@ const Navbar = () => {
         <div id="mobile-nav">
           <ul>
             <li><Link to="/" onClick={toggleMobileNav}>Home</Link></li>
-            <li><Link to="/projects" onClick={toggleMobileNav}>Projects</Link></li>
+            <li><Link to="/projects" onClick={toggleMobileNav}>Work</Link></li>
             <li><Link to="/creative" onClick={toggleMobileNav}>Creative</Link></li>
             {/* <li><Link to="/about" onClick={toggleMobileNav}>About</Link></li> */}
             {/* <li className="ig">

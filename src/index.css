@@ -321,6 +321,7 @@ logo: helvetica bold
     transition: 0.4s ease-in-out;
     outline: none;
     cursor: pointer;
+    color: black;
   }
   
   #mobile-nav-toggle i {

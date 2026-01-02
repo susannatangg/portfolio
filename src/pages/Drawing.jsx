@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 const Drawing = () => {
   // Updated the 'src' paths within the array to include the dynamic base URL
   const drawings = [
-    { id: 1, text: "wuzhen, china.", src: `${import.meta.env.BASE_URL}assets/img/drawing/wuzhen.jpg`},
-    { id: 2, text: "salmon on a stick :O", src: `${import.meta.env.BASE_URL}assets/img/drawing/salmon.jpg`},
-    { id: 3, text: "my first omakase!", src: `${import.meta.env.BASE_URL}assets/img/drawing/omakase.jpg`},
-    { id: 4, text: "jiufen, taiwan.", src: `${import.meta.env.BASE_URL}assets/img/drawing/jiufen.jpg`},
-    { id: 5, text: "another beautiful day to work a 9-5 in seattle!", src: `${import.meta.env.BASE_URL}assets/img/drawing/seattle.jpg`},
+    { id: 1, text: "wuzhen, china.", src: `${import.meta.env.BASE_URL}assets/img/drawing/wuzhen.webp`},
+    { id: 2, text: "salmon on a stick :O", src: `${import.meta.env.BASE_URL}assets/img/drawing/salmon.webp`},
+    { id: 3, text: "my first omakase!", src: `${import.meta.env.BASE_URL}assets/img/drawing/omakase.webp`},
+    { id: 4, text: "jiufen, taiwan.", src: `${import.meta.env.BASE_URL}assets/img/drawing/jiufen.webp`},
+    { id: 5, text: "another beautiful day to work a 9-5 in seattle!", src: `${import.meta.env.BASE_URL}assets/img/drawing/seattle.webp`},
   ];
 
   return (

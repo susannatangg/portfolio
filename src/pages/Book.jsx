@@ -48,8 +48,8 @@ const DesignItem = () => {
                 When the program ended, we stayed in touch through our common love for biology and care for children.
                 <br/>
                 <br/>
-                After many many Zoom meetings turned yaps, we drafted a book, published our book, hosted read-alouds in elementary schools, and found a new joy in sharing the project that bonded our friendship!
-                We hope that our book can provide a memorable and simple scientific answer to the question: What makes you, you? 
+                After many many Zoom meetings turned yaps, we drafted a book, published our book, hosted read-alouds in elementary schools, and found a new joy in sharing the passion that helped sustain our friendship!
+                We hope that our book can provide a simple and memorable scientific answer to the question: What makes you, you? 
              </p>
             </div>
             <div className="item flex-fill">
